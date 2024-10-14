@@ -1,0 +1,33 @@
+/* Style the container class to center its content horizontally and give it some top margin for spacing. */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+}
+
+/* Style the color-box id with a fixed width and height, and set a default background color. */
+#color-box {
+  width: 250px;
+  height: 250px;
+  background-color: aliceblue;
+}
+/* 
+Style the change-color-btn id to make it visually appealing and easily clickable. */
+#change-color-btn {
+  margin-top: 50px;
+  width: 120px;
+  height: 60px;
+  background-color: brown;
+  color: black;
+  border-radius: 20px;
+}
+
+/* style change color is hovering green and white */
+
+#change-color-btn:hover {
+  background-color: green;
+  color: white;
+}
