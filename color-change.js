@@ -1,6 +1,8 @@
 //creating a link to both the change color btn and the color box then linking it to a string
 const color_box_btn = document.getElementById("change-color-btn");
 const color_box = document.getElementById("color-box");
+const color_box2 = document.getElementById("color-box2");
+const color_box_btn2 = document.getElementById("change-color-btn2");
 
 // creating a function in order to link the button to an eventlistner
 const getRandomColor = () => {
@@ -29,3 +31,11 @@ const getRandomColor = () => {
 color_box_btn.addEventListener("click", getRandomColor);
 
 //Done
+
+function getRandomColor2() {
+  let rando = Math.floor(100000 + Math.random() * 900000);
+
+  color_box2.style.backgroundColor = `#${rando}`;
+}
+
+color_box_btn2.addEventListener("click", getRandomColor2);
